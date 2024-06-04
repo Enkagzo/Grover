@@ -3,14 +3,14 @@
 ///
 /// # Description
 /// This is a minimal Q# program that can be used to start writing Q# code.
-namespace MyQuantumProgram {
+namespace Grover {
 
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Measurement;
     open Microsoft.Quantum.Arrays;
     open Microsoft.Quantum.Math;
 
-    @EntryPoint()
+    // @EntryPoint()
     operation Main() : Result[] {
         let nMarkedItems = 1;
 
