@@ -1,8 +1,3 @@
-/// # Sample
-/// Getting started
-///
-/// # Description
-/// This is a minimal Q# program that can be used to start writing Q# code.
 namespace Grover {
 
     open Microsoft.Quantum.Convert;
@@ -32,10 +27,6 @@ namespace Grover {
         ResetAll(qs);
         return result;
     }
-
-    // function ComputeNIterations (nMarkedItems : Int, nTotalItems : Int) : Int {
-    //     return 1
-    // }
 
     operation ReflectionAboutUniform (qs : Qubit[]) : Unit {
         within {
