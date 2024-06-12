@@ -17,6 +17,13 @@ namespace Grover {
         return GroverSearch(qs, PhaseOracleAlternating, nIterations);
     }
 
+    operation GroverCall(nbQbits : Int, nbIteration : Int) : Result[]
+    {
+        use qs = Qubit[nbQbits];
+
+        return GroverSearch(qs, PhaseOracleAlternating, nbIteration);
+    }
+
     operation GroverSearch (qs : Qubit[], phaseOracle : (Qubit[] => Unit), nIterations : Int) : Result[] {
         ApplyToEachCA (H, qs);
         for idxIteration in 1..nIterations {
